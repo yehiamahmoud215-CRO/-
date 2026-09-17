@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عود كلمنتان البرنس - عرض الكيلو</title>
+    <!-- استدعاء خط عربي احترافي من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ================= PIXELS START ================= -->
+    
+    <!-- TikTok Pixel Code Start -->
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+      var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+      ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+      ttq.load('D5QG5D3C77U3UMFCITRG');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+
+    <!-- Snap Pixel Code -->
+    <script type='text/javascript'>
+    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+    r.src=n;var u=t.getElementsByTagName(s)[0];
+    u.parentNode.insertBefore(r,u);})(window,document,
+    'https://sc-static.net/scevent.min.js');
+    snaptr('init', 'ed9eaec2-dfca-4975-95da-b4da32437227', {});
+    snaptr('track', 'PAGE_VIEW');
+    </script>
+    <!-- End Snap Pixel Code -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1318905750377777');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1318905750377777&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- ================= PIXELS END ================= -->
+
+    <style>
+        /* المتغيرات (الألوان الأساسية للهوية) */
+        :root {
+            --gold: #d4af37;
+            --gold-dark: #b5952f;
+            --dark-wood: #1a120b;
+            --brown: #3c2a21;
+            --light-bg: #f9f6f0;
+            --white: #ffffff;
+            --text-dark: #222222;
+            --whatsapp: #25D366;
+        }
+
+        /* الإعدادات الأساسية */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--light-bg); color: var(--text-dark); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* الأزرار (تم تعديل اللون ليتناسب مع الواتساب عند الحاجة أو الإبقاء على الذهبي) */
+        .btn {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--dark-wood);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 300px;
+        }
+        .btn:hover { background-color: var(--gold-dark); transform: translateY(-2px); }
+        
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        .btn-whatsapp:hover { background-color: #1ebe57; color: white; }
+
+        /* شريط الإعلانات المتحرك */
+        .announcement-bar { background-color: var(--dark-wood); color: var(--gold); padding: 10px 0; font-size: 0.9rem; font-weight: 500; overflow: hidden; white-space: nowrap; }
+        .marquee { display: inline-block; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .marquee span { margin: 0 20px; }
+
+        /* الهيدر (القائمة) */
+        header { background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--dark-wood); }
+        .logo span { color: var(--gold-dark); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--gold-dark); }
+        @media (max-width: 768px) { .nav-links { display: none; } }
+
+        /* القسم الرئيسي (Hero) */
+        .hero { background: linear-gradient(rgba(26, 18, 11, 0.85), rgba(26, 18, 11, 0.85)), url('https://images.unsplash.com/photo-1605368551406-817812f8aeb4?auto=format&fit=crop&q=80&w=1200') center/cover; color: var(--white); text-align: center; padding: 100px 20px; }
+        .hero h1 { color: var(--gold); font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 30px auto; }
+        .hero-price { font-size: 2rem; font-weight: bold; color: var(--gold); margin-bottom: 30px; display: block; }
+
+        /* الأقسام المشتركة */
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: var(--dark-wood); }
+        .features, .gallery, .problems-solutions, .testimonials, .faq { padding: 60px 0; }
+        .features { background-color: var(--white); }
+        .gallery, .testimonials { background-color: var(--light-bg); }
+        .problems-solutions { background-color: var(--white); }
+
+        /* شبكات الأقسام */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
+        .feature-item { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: transform 0.3s ease; }
+        .feature-item:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .gallery-card { background: var(--white); border-radius: 10px; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .gallery-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        .gallery-card h3 { padding: 15px; text-align: center; background-color: var(--brown); color: var(--gold); font-size: 1.1rem; margin: 0; }
+
+        .ps-container { display: flex; flex-wrap: wrap; gap: 40px; }
+        .problems, .solutions { flex: 1; min-width: 300px; background: var(--light-bg); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .problems h3 { color: #d32f2f; margin-bottom: 20px; font-size: 1.5rem; }
+        .solutions h3 { color: #2e7d32; margin-bottom: 20px; font-size: 1.5rem; }
+        .ps-list { list-style: none; }
+        .ps-list li { margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+
+        /* قسم الطلب عبر واتساب */
+        .product-section { padding: 80px 0; background-color: var(--dark-wood); color: var(--white); text-align: center; }
+        .product-card { background-color: var(--brown); max-width: 500px; margin: 0 auto; padding: 40px; border-radius: 10px; border: 2px solid var(--gold); }
+        .old-price { text-decoration: line-through; color: #aaa; font-size: 1.2rem; }
+        .new-price { font-size: 3rem; color: var(--gold); font-weight: bold; margin: 10px 0; }
+        .product-note { color: #eee; margin-bottom: 25px; }
+
+        /* التقييمات */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .review-card { background: var(--white); padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-right: 4px solid var(--gold); }
+        .stars { color: #ffc107; margin-bottom: 10px; font-size: 1.2rem; }
+
+        /* الأسئلة الشائعة */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        details { background-color: var(--light-bg); margin-bottom: 10px; border-radius: 5px; overflow: hidden; }
+        summary { padding: 20px; font-weight: bold; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        summary::-webkit-details-marker { display: none; }
+        summary:after { content: "+"; font-size: 1.5rem; color: var(--gold-dark); }
+        details[open] summary:after { content: "-"; }
+        .faq-answer { padding: 0 20px 20px 20px; color: #555; }
+
+        /* الفوتر */
+        footer { background-color: var(--dark-wood); color: var(--white); text-align: center; padding: 40px 20px; }
+        .footer-links { margin: 20px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+        .footer-links a { color: var(--gold); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        <div class="marquee">
+            <span>🚚 شحن مجاني لجميع مناطق المملكة</span>
+            <span>🥇 ضمان ذهبي للاسترجاع</span>
+            <span>🔥 فرصة للمستخدم والتاجر: الكيلو بـ 696 ريال فقط</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">عود <span>البرنس</span></div>
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#gallery">شاهد الجودة</a>
+                <a href="#reviews">آراء العملاء</a>
+            </nav>
+            <div class="actions">
+                <!-- زر الهيدر يطلق السكربت -->
+                <button onclick="orderViaWhatsApp()" class="btn" style="padding: 10px 20px; font-size: 1rem; max-width: 150px;">اطلب واتساب 💬</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>عود كلمنتان البرنس</h1>
+            <p>الفخامة التي تستحقها.. جودة عالية بسعر جملة الجملة! استمتع بعبق العود الفاخر، طبيعي محسن وخالي من المستكا تماماً.</p>
+            <span class="hero-price">الكيلو بـ 696 ريال فقط!</span>
+            <!-- زر الطلب يطلق السكربت -->
+            <button onclick="orderViaWhatsApp()" class="btn btn-whatsapp">
+                <span>اطلب عبر واتساب</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- المميزات السريعة -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">لماذا عود كلمنتان البرنس؟</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💨</div>
+                    <h3>زبد وفوحان عالي</h3>
+                    <p>يملأ المكان بالرائحة الفاخرة التي تدوم طويلاً.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌳</div>
+                    <h3>خالي من المستكا</h3>
+                    <p>رائحة صافية بدون أي إضافات مزعجة.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>سعر جملة الجملة</h3>
+                    <p>فرصة للمستخدم والتاجر، الكيلو بـ 696 ريال.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🥇</div>
+                    <h3>الضمان الذهبي</h3>
+                    <p>حقك محفوظ، جرب وإذا ما ناسبك استرجع.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الصور -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">شاهد جودة العود بعينك 👁️</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="https://j.top4top.io/p_3912zwncu3.png" alt="كسر عود كبيرة وفاخرة">
+                    <h3>✨ كسر فاخرة مليئة بالدهن</h3>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://i.top4top.io/p_3912sryrr2.png" alt="زبد العود على الجمر">
+                    <h3>🔥 زبد كثيف ودهن صافي</h3>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://h.top4top.io/p_39127v5801.png" alt="دخنة العود الكثيفة">
+                    <h3>💨 دخنة كثيفة وفوحان عالي</h3>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://k.top4top.io/p_39120kclu4.jpeg" alt="تغليف عود كلمنتان البرنس">
+                    <h3>🎁 تغليف فاخر يليق بك</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المشاكل والحلول -->
+    <section class="problems-solutions">
+        <div class="container">
+            <h2 class="section-title">ليش تتعب في البحث عن العود المناسب؟</h2>
+            <div class="ps-container">
+                <div class="problems">
+                    <h3>❌ مشاكل العود في السوق</h3>
+                    <ul class="ps-list">
+                        <li>رائحة حرق وخشب في نهاية الكسرة.</li>
+                        <li>مليء بالمستكا اللي تكتم الأنفاس لزيادة الوزن.</li>
+                        <li>أسعار مبالغ فيها من التجار والوسطاء.</li>
+                    </ul>
+                </div>
+                <div class="solutions">
+                    <h3>✔️ الحل مع كلمنتان البرنس 👑</h3>
+                    <ul class="ps-list">
+                        <li>كسرة واحدة تكفي لتغيير الأجواء برائحة طروب.</li>
+                        <li>عود صافي زبد كثيف يطرب العين.</li>
+                        <li>سعر جملة الجملة من المصدر إليك مباشرة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الطلب الرئيسي -->
+    <section id="shop" class="product-section">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--white);">تسوق عرض الموسم 🔥</h2>
+            <div class="product-card">
+                <h3>📦 عرض الكيلو - عود كلمنتان البرنس</h3>
+                <div class="old-price">السعر السابق: 1,400 ريال</div>
+                <div class="new-price">696 ريال</div>
+                <p class="product-note">✅ الشحن مجاني لجميع المدن + يشمله الضمان الذهبي</p>
+                <!-- زر الطلب يطلق السكربت -->
+                <button onclick="orderViaWhatsApp()" class="btn btn-whatsapp">
+                    <span>اطلب الآن عبر واتساب</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- التقييمات الكتابية -->
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">ماذا يقول عملاؤنا؟ 💬</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"العود يبيض الوجه الزبد حقه خيالي، وأهم شي ما فيه ريحة حرق أو مستكا. أخذت كيلو لي ولأخواني والسعر يا بلاش!"</p>
+                    <p class="reviewer">- أبو محمد</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"أنا تاجر مبتدئ وأخذت الكيلو بـ 696 وقسمته أوقيات وربحت فيه دبل ولله الحمد.. جودة تفرض نفسها بالسوق."</p>
+                    <p class="reviewer">- عبدالله السبيعي</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"رائحة فخمة للمجالس والمساجد، يثبت بالملابس فترة طويلة ومستحيل تلاقي هالسعر في أي متجر ثاني."</p>
+                    <p class="reviewer">- فهد العتيبي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>هل العود فعلاً خالي من المستكا؟</summary>
+                    <div class="faq-answer">نعم، نضمن لك أن عود كلمنتان البرنس طبيعي محسن وخالي تماماً من المستكا التي تسبب كتمة أو رائحة غير مرغوبة في نهاية الاحتراق.</div>
+                </details>
+                <details>
+                    <summary>ما هو الضمان الذهبي؟</summary>
+                    <div class="faq-answer">ثقتنا بمنتجنا جعلتنا نقدم "الضمان الذهبي"، إذا استلمت العود وجربته ولم يعجبك، يحق لك استرجاعه واسترداد أموالك بكل سهولة.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <h2>عود كلمنتان البرنس</h2>
+            <p>رائحة الفخامة بين يديك.. بأسعار لا تُنافس.</p>
+            <div class="footer-links">
+                <a href="#">سياسة الاسترجاع</a>
+                <a href="#">الشروط والأحكام</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 جميع الحقوق محفوظة لمتجر عود البرنس.
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكربت تتبع أزرار الواتساب -->
+    <script>
+        function orderViaWhatsApp() {
+            // 1. تتبع الحدث في ميتا (فيسبوك)
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Contact');
+            }
+            
+            // 2. تتبع الحدث في تيك توك
+            if (typeof ttq !== 'undefined') {
+                ttq.track('Contact');
+            }
+            
+            // 3. تتبع الحدث في سناب شات
+            if (typeof snaptr !== 'undefined') {
+                snaptr('track', 'START_CHECKOUT');
+            }
+
+            // 4. تحويل العميل إلى واتساب بالرسالة المجهزة
+            var phone = "966532166914";
+            var message = "سلام عليكم ورحمة الله وبركاته اريد استفسر عن انواع العود";
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/" + phone + "?text=" + encodedMessage;
+            
+            // فتح الواتساب في نافذة جديدة
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
