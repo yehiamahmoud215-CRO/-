@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عود كلمنتان البرنس - عرض الكيلو</title>
+    <title>ذوق الصفوة للعود - عود كلمنتان البرنس</title>
     <!-- استدعاء خط عربي احترافي من جوجل -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     
@@ -55,31 +55,30 @@
     <!-- ================= PIXELS END ================= -->
 
     <style>
-        /* المتغيرات (الألوان الأساسية للهوية) */
+        /* المتغيرات (الألوان مستوحاة من الشعار الجديد) */
         :root {
-            --gold: #d4af37;
-            --gold-dark: #b5952f;
-            --dark-wood: #1a120b;
-            --brown: #3c2a21;
-            --light-bg: #f9f6f0;
-            --white: #ffffff;
+            --light-blue: #e4f1f9; /* لون خلفية الشعار الفاتح */
+            --gold: #c09d59; /* اللون الذهبي للشعار */
+            --gold-dark: #a88748;
+            --text-grey: #5c5c5c; /* لون النص في الشعار */
             --text-dark: #222222;
+            --white: #ffffff;
             --whatsapp: #25D366;
         }
 
         /* الإعدادات الأساسية */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Tajawal', sans-serif; background-color: var(--light-bg); color: var(--text-dark); line-height: 1.6; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--white); color: var(--text-dark); line-height: 1.6; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         a { text-decoration: none; color: inherit; }
         
-        /* الأزرار (تم تعديل اللون ليتناسب مع الواتساب عند الحاجة أو الإبقاء على الذهبي) */
+        /* الأزرار */
         .btn {
             display: inline-block;
             background-color: var(--gold);
-            color: var(--dark-wood);
+            color: var(--white);
             padding: 15px 30px;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1.2rem;
             font-weight: 700;
             text-align: center;
@@ -88,7 +87,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             width: 100%;
-            max-width: 300px;
+            max-width: 320px;
         }
         .btn:hover { background-color: var(--gold-dark); transform: translateY(-2px); }
         
@@ -101,80 +100,114 @@
             gap: 10px;
             margin: 0 auto;
         }
-        .btn-whatsapp:hover { background-color: #1ebe57; color: white; }
+        .btn-whatsapp:hover { background-color: #1ebe57; }
 
         /* شريط الإعلانات المتحرك */
-        .announcement-bar { background-color: var(--dark-wood); color: var(--gold); padding: 10px 0; font-size: 0.9rem; font-weight: 500; overflow: hidden; white-space: nowrap; }
+        .announcement-bar { background-color: var(--gold); color: var(--white); padding: 10px 0; font-size: 1rem; font-weight: 700; overflow: hidden; white-space: nowrap; }
         .marquee { display: inline-block; animation: marquee 20s linear infinite; }
         @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
         .marquee span { margin: 0 20px; }
 
         /* الهيدر (القائمة) */
-        header { background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        header { background-color: var(--light-blue); box-shadow: 0 2px 10px rgba(0,0,0,0.05); padding: 15px 0; position: sticky; top: 0; z-index: 100; }
         .header-content { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--dark-wood); }
-        .logo span { color: var(--gold-dark); }
-        .nav-links { display: flex; gap: 20px; }
-        .nav-links a { font-weight: 500; transition: color 0.3s ease; }
-        .nav-links a:hover { color: var(--gold-dark); }
+        
+        /* الشعار */
+        .logo img { height: 60px; max-width: 100%; object-fit: contain; }
+        
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { font-weight: 600; color: var(--text-grey); transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--gold); }
         @media (max-width: 768px) { .nav-links { display: none; } }
 
-        /* القسم الرئيسي (Hero) */
-        .hero { background: linear-gradient(rgba(26, 18, 11, 0.85), rgba(26, 18, 11, 0.85)), url('https://images.unsplash.com/photo-1605368551406-817812f8aeb4?auto=format&fit=crop&q=80&w=1200') center/cover; color: var(--white); text-align: center; padding: 100px 20px; }
-        .hero h1 { color: var(--gold); font-size: 3rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 30px auto; }
-        .hero-price { font-size: 2rem; font-weight: bold; color: var(--gold); margin-bottom: 30px; display: block; }
+        /* القسم الرئيسي (Hero) - صورة بارزة جذابة */
+        .hero { 
+            background-color: var(--light-blue); 
+            padding: 40px 20px 80px 20px; 
+            text-align: center; 
+        }
+        .hero-image-container {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 4px solid var(--white);
+        }
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .hero-image-container:hover img {
+            transform: scale(1.02);
+        }
+        
+        .hero h1 { color: var(--text-grey); font-size: 2.8rem; margin-bottom: 15px; font-weight: 800; }
+        .hero h1 span { color: var(--gold); }
+        .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 25px auto; color: var(--text-dark); }
+        .hero-price { font-size: 2.2rem; font-weight: bold; color: var(--gold-dark); margin-bottom: 30px; display: block; background: var(--white); padding: 10px 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
 
         /* الأقسام المشتركة */
-        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: var(--dark-wood); }
-        .features, .gallery, .problems-solutions, .testimonials, .faq { padding: 60px 0; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: var(--text-grey); font-weight: 800;}
+        .features, .gallery, .problems-solutions, .testimonials, .faq { padding: 80px 0; }
+        
+        /* الخلفيات المتناوبة */
         .features { background-color: var(--white); }
-        .gallery, .testimonials { background-color: var(--light-bg); }
-        .problems-solutions { background-color: var(--white); }
+        .gallery { background-color: #fcfcfc; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+        .problems-solutions { background-color: var(--light-blue); }
 
         /* شبكات الأقسام */
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
-        .feature-item { padding: 30px; border: 1px solid #eee; border-radius: 8px; transition: transform 0.3s ease; }
-        .feature-item:hover { transform: translateY(-5px); border-color: var(--gold); }
-        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .feature-item { padding: 40px 20px; background: var(--white); border: 1px solid #eaeaea; border-radius: 12px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+        .feature-item:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 10px 25px rgba(192, 157, 89, 0.2); }
+        .feature-icon { font-size: 3rem; margin-bottom: 15px; }
+        .feature-item h3 { color: var(--text-grey); margin-bottom: 10px; }
 
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .gallery-card { background: var(--white); border-radius: 10px; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .gallery-card img { width: 100%; height: 250px; object-fit: cover; display: block; }
-        .gallery-card h3 { padding: 15px; text-align: center; background-color: var(--brown); color: var(--gold); font-size: 1.1rem; margin: 0; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .gallery-card { background: var(--white); border-radius: 12px; overflow: hidden; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .gallery-card img { width: 100%; height: 280px; object-fit: cover; display: block; }
+        .gallery-card h3 { padding: 18px; text-align: center; background-color: var(--light-blue); color: var(--text-grey); font-size: 1.1rem; margin: 0; font-weight: 700;}
 
         .ps-container { display: flex; flex-wrap: wrap; gap: 40px; }
-        .problems, .solutions { flex: 1; min-width: 300px; background: var(--light-bg); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .problems h3 { color: #d32f2f; margin-bottom: 20px; font-size: 1.5rem; }
-        .solutions h3 { color: #2e7d32; margin-bottom: 20px; font-size: 1.5rem; }
+        .problems, .solutions { flex: 1; min-width: 300px; background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.05); }
+        .problems h3 { color: #d32f2f; margin-bottom: 25px; font-size: 1.6rem; }
+        .solutions h3 { color: #2e7d32; margin-bottom: 25px; font-size: 1.6rem; }
         .ps-list { list-style: none; }
-        .ps-list li { margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+        .ps-list li { margin-bottom: 18px; font-size: 1.1rem; display: flex; align-items: flex-start; gap: 10px; color: var(--text-dark);}
 
         /* قسم الطلب عبر واتساب */
-        .product-section { padding: 80px 0; background-color: var(--dark-wood); color: var(--white); text-align: center; }
-        .product-card { background-color: var(--brown); max-width: 500px; margin: 0 auto; padding: 40px; border-radius: 10px; border: 2px solid var(--gold); }
-        .old-price { text-decoration: line-through; color: #aaa; font-size: 1.2rem; }
-        .new-price { font-size: 3rem; color: var(--gold); font-weight: bold; margin: 10px 0; }
-        .product-note { color: #eee; margin-bottom: 25px; }
+        .product-section { padding: 80px 0; background-color: var(--white); text-align: center; }
+        .product-card { background-color: var(--light-blue); max-width: 600px; margin: 0 auto; padding: 50px 30px; border-radius: 15px; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(192, 157, 89, 0.15);}
+        .product-card h3 { color: var(--text-grey); font-size: 1.8rem; margin-bottom: 20px;}
+        .old-price { text-decoration: line-through; color: #888; font-size: 1.3rem; }
+        .new-price { font-size: 3.5rem; color: var(--gold-dark); font-weight: 800; margin: 10px 0; }
+        .product-note { color: var(--text-grey); margin-bottom: 30px; font-weight: 600; font-size: 1.1rem;}
 
         /* التقييمات */
-        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .review-card { background: var(--white); padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-right: 4px solid var(--gold); }
-        .stars { color: #ffc107; margin-bottom: 10px; font-size: 1.2rem; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .review-card { background: var(--light-blue); padding: 30px; border-radius: 12px; border-right: 5px solid var(--gold); }
+        .stars { color: #ffc107; margin-bottom: 15px; font-size: 1.3rem; }
+        .review-text { font-style: italic; margin-bottom: 20px; color: var(--text-dark); line-height: 1.8;}
+        .reviewer { font-weight: 800; color: var(--text-grey); }
 
         /* الأسئلة الشائعة */
         .faq-container { max-width: 800px; margin: 0 auto; }
-        details { background-color: var(--light-bg); margin-bottom: 10px; border-radius: 5px; overflow: hidden; }
-        summary { padding: 20px; font-weight: bold; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        details { background-color: var(--light-blue); margin-bottom: 15px; border-radius: 8px; overflow: hidden; border: 1px solid #e1eaf0;}
+        summary { padding: 20px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; color: var(--text-grey);}
         summary::-webkit-details-marker { display: none; }
-        summary:after { content: "+"; font-size: 1.5rem; color: var(--gold-dark); }
+        summary:after { content: "+"; font-size: 1.5rem; color: var(--gold); }
         details[open] summary:after { content: "-"; }
-        .faq-answer { padding: 0 20px 20px 20px; color: #555; }
+        .faq-answer { padding: 0 20px 20px 20px; color: var(--text-dark); }
 
         /* الفوتر */
-        footer { background-color: var(--dark-wood); color: var(--white); text-align: center; padding: 40px 20px; }
-        .footer-links { margin: 20px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
-        .footer-links a { color: var(--gold); font-size: 0.9rem; }
+        footer { background-color: var(--light-blue); color: var(--text-grey); text-align: center; padding: 50px 20px; border-top: 1px solid #d2e4f0;}
+        footer h2 { color: var(--gold-dark); margin-bottom: 10px;}
+        .footer-links { margin: 25px 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+        .footer-links a { color: var(--text-grey); font-size: 1rem; font-weight: 600;}
+        .footer-links a:hover { color: var(--gold); }
+        .copyright { color: #888; font-size: 0.9rem; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -184,19 +217,23 @@
             <span>🚚 شحن مجاني لجميع مناطق المملكة</span>
             <span>🥇 ضمان ذهبي للاسترجاع</span>
             <span>🔥 فرصة للمستخدم والتاجر: الكيلو بـ 696 ريال فقط</span>
+            <span>🚚 شحن مجاني لجميع مناطق المملكة</span>
         </div>
     </div>
 
     <header>
         <div class="container header-content">
-            <div class="logo">عود <span>البرنس</span></div>
+            <!-- تم استخدام رابط الشعار الذي أرسلته -->
+            <a href="#home" class="logo">
+                <img src="https://g.top4top.io/p_391207to61.png" alt="ذوق الصفوة للعود">
+            </a>
+            
             <nav class="nav-links">
                 <a href="#home">الرئيسية</a>
                 <a href="#gallery">شاهد الجودة</a>
                 <a href="#reviews">آراء العملاء</a>
             </nav>
             <div class="actions">
-                <!-- زر الهيدر يطلق السكربت -->
                 <button onclick="orderViaWhatsApp()" class="btn" style="padding: 10px 20px; font-size: 1rem; max-width: 150px;">اطلب واتساب 💬</button>
             </div>
         </div>
@@ -204,12 +241,17 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h1>عود كلمنتان البرنس</h1>
+            <!-- صورة بارزة تجذب الانتباه (صورة الكسر الكبيرة التي أرسلتها) -->
+            <div class="hero-image-container">
+                <img src="https://j.top4top.io/p_3912zwncu3.png" alt="عود كلمنتان البرنس الفاخر">
+            </div>
+
+            <h1>عود كلمنتان <span>البرنس</span></h1>
             <p>الفخامة التي تستحقها.. جودة عالية بسعر جملة الجملة! استمتع بعبق العود الفاخر، طبيعي محسن وخالي من المستكا تماماً.</p>
-            <span class="hero-price">الكيلو بـ 696 ريال فقط!</span>
-            <!-- زر الطلب يطلق السكربت -->
+            <div class="hero-price">الكيلو بـ 696 ريال فقط!</div>
+            <br>
             <button onclick="orderViaWhatsApp()" class="btn btn-whatsapp">
-                <span>اطلب عبر واتساب</span>
+                <span>اطلب الآن عبر واتساب</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
             </button>
         </div>
@@ -297,13 +339,12 @@
     <!-- قسم الطلب الرئيسي -->
     <section id="shop" class="product-section">
         <div class="container">
-            <h2 class="section-title" style="color: var(--white);">تسوق عرض الموسم 🔥</h2>
+            <h2 class="section-title">تسوق عرض الموسم 🔥</h2>
             <div class="product-card">
                 <h3>📦 عرض الكيلو - عود كلمنتان البرنس</h3>
                 <div class="old-price">السعر السابق: 1,400 ريال</div>
                 <div class="new-price">696 ريال</div>
                 <p class="product-note">✅ الشحن مجاني لجميع المدن + يشمله الضمان الذهبي</p>
-                <!-- زر الطلب يطلق السكربت -->
                 <button onclick="orderViaWhatsApp()" class="btn btn-whatsapp">
                     <span>اطلب الآن عبر واتساب</span>
                 </button>
@@ -355,14 +396,14 @@
     <!-- الفوتر -->
     <footer>
         <div class="container">
-            <h2>عود كلمنتان البرنس</h2>
+            <img src="https://g.top4top.io/p_391207to61.png" alt="ذوق الصفوة للعود" style="height: 50px; margin-bottom: 15px;">
             <p>رائحة الفخامة بين يديك.. بأسعار لا تُنافس.</p>
             <div class="footer-links">
                 <a href="#">سياسة الاسترجاع</a>
                 <a href="#">الشروط والأحكام</a>
             </div>
             <div class="copyright">
-                &copy; 2026 جميع الحقوق محفوظة لمتجر عود البرنس.
+                &copy; 2026 جميع الحقوق محفوظة لمتجر ذوق الصفوة للعود.
             </div>
         </div>
     </footer>
